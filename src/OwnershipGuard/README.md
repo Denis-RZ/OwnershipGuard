@@ -122,4 +122,4 @@ OwnershipGuard does not implement:
 
 ## License
 
-MIT. See [LICENSE](https://github.com/ownershipguard/ownershipguard/blob/main/LICENSE).
+MIT. See [LICENSE](https://github.com/Denis-RZ/OwnershipGuard/blob/main/LICENSE).

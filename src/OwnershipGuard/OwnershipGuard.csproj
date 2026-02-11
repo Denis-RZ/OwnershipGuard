@@ -17,9 +17,9 @@
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <IsPackable>true</IsPackable>
     <OutputType>Library</OutputType>
-    <RepositoryUrl>https://github.com/ownershipguard/ownershipguard</RepositoryUrl>
+    <RepositoryUrl>https://github.com/Denis-RZ/OwnershipGuard</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageProjectUrl>https://github.com/ownershipguard/ownershipguard</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/Denis-RZ/OwnershipGuard</PackageProjectUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>Initial public release with ownership and optional tenant checks for Minimal API and MVC, plus EF Core query helpers.</PackageReleaseNotes>
     <IncludeSymbols>true</IncludeSymbols>

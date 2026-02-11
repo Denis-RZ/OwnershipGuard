@@ -1,0 +1,27 @@
+# Build
+bin/
+obj/
+
+# IDE
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+packages/
+
+# Test
+TestResults/
+coverage*.json
+coverage*.xml
+
+# Misc
+*.log
+.DS_Store
+.tmp_*/

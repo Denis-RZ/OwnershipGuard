@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>OwnershipGuard</RootNamespace>
+    <PackageId>OwnershipGuard</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>OwnershipGuard</Authors>
+    <Description>ASP.NET Core library to prevent IDOR/Broken Access Control by making ownership and tenant access checks easy and hard to forget.</Description>
+    <PackageTags>aspnetcore;security;idor;access-control;ownership;tenant</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <IsPackable>true</IsPackable>
+    <OutputType>Library</OutputType>
+    <RepositoryUrl>https://github.com/ownershipguard/ownershipguard</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/ownershipguard/ownershipguard</PackageProjectUrl>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>Initial public release with ownership and optional tenant checks for Minimal API and MVC, plus EF Core query helpers.</PackageReleaseNotes>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PublishRepositoryUrl Condition="Exists('$(MSBuildProjectDirectory)\\..\\..\\.git')">true</PublishRepositoryUrl>
+    <EmbedUntrackedSources Condition="Exists('$(MSBuildProjectDirectory)\\..\\..\\.git')">true</EmbedUntrackedSources>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="" />
+    <None Include="..\\..\\LICENSE" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.11" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" Condition="Exists('$(MSBuildProjectDirectory)\\..\\..\\.git')" />
+  </ItemGroup>
+
+</Project>
